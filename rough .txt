@@ -1,0 +1,146 @@
+
+<!---- JavaScript For Toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>  
+
+
+
+
+nav.fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #011f33;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+<i class="fa fa-bars" onclick="showMenu()"></i>
+<i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+<div class="row">
+        <div class="special-col">
+            <h3>Special 1</h3>
+            <p2>Website is a hyper-media information storage system linking resources around the world. <br>In website, browsers allow highlighted words or an icon which is called hyper links to display text, video, graphics and sound on a local computer screen.<br> With the introduction of World Wide Web in 1989, the concept of websites has become more popular.<br> On this web, anyone can create a home page, which millions of users can watch on their computers and respond</p2>
+        </div>  
+        <div class="special-col">
+            <h3>Special 2</h3>
+            <p2>Website is a hyper-media information storage system linking resources around the world. <br>In website, browsers allow highlighted words or an icon which is called hyper links to display text, video, graphics and sound on a local computer screen.<br> With the introduction of World Wide Web in 1989, the concept of websites has become more popular.<br> On this web, anyone can create a home page, which millions of users can watch on their computers and respond</p2>
+        </div> 
+        <div class="special-col">
+            <h3>Special 3</h3>
+            <p2>Website is a hyper-media information storage system linking resources around the world. <br>In website, browsers allow highlighted words or an icon which is called hyper links to display text, video, graphics and sound on a local computer screen.<br> With the introduction of World Wide Web in 1989, the concept of websites has become more popular.<br> On this web, anyone can create a home page, which millions of users can watch on their computers and respond</p2>
+        </div> 
+          
+    </div>
+
+.specials h1{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.specials h1::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #120118;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.specials h1{
+    padding-bottom: 2.1px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.1px;
+}
+p1{
+    color: rgb(0, 102, 105);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 33px;
+    padding: 30px;
+}
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.special-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+img{
+    width: 100%;
+    height: auto;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.menu-item-name{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 500;
+}
+.menu-item-price{
+    text-align: right;
+    float: right;
+
+}
