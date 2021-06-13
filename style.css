@@ -175,33 +175,74 @@ img{
 /*Start Menu*/
 .section-title-text-center{
     text-align: center;
-    padding-top: 75px;
-    background: blue 
+    padding-top: 0;
+    background: rgb(116, 116, 126) 
     url(./Img/Text\ BG.jpg);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: 20px;
     font-size: 50px;
 }
-.menu-section-title{
+#restaurant-menu{
+    padding: 25px 0 30px 0;
+}
+#restaurant-menu h2{
+    padding: 0 auto;
+    text-transform: uppercase;
+}
+#restaurant-menu .menu-section h2{
+    margin: 0 auto;
+}
+#restaurant-menu .menu-section{
+    margin: 0 20px 80px;
+}
+#restaurant-menu .menu-section-title{
+    font-size: 32px;
+    display: block;
+    font-weight: 400;
+    color: #444;
+    margin: 20px 0;
     text-align: center;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: rgb(63, 76, 77);
 }
-.menu-items{
-    display: inline-block;
-    justify-content: space-between;
+#restaurant-menu .menu-item{
+    margin: 45px 0;
+    font-size: 18px;
 }
-.menu-item-name{
+#restaurant-menu .menu-item-name{
+    font-weight: 400;
     font-size: 20px;
-    padding: 20px;
-    font-weight: 500;
-    
+    color: #444;
+    margin-bottom: 10px;
 }
-.menu-item-price{
-    text-align: right;
+#restaurant-menu .menu-item-description{
+    font-size: 15px;
+    width: 85%;
+}
+#restaurant-menu .menu-item-price{
+    float: right;
+    font-weight: 400;
+    color: #555;
+    margin-top: -36px;
+}
+
+/* END MENU SECTION*/
+
+
+/* OUR CHEF SECTION*/
+#chef h1{
+    text-align: center;
+    padding-top: 0;
+    background: rgb(116, 116, 126) 
+    url(./Img/Text\ BG.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+#chef content{
+    display: flex;
+}   
+#chef img{
+    max-width: 100%;
 }
