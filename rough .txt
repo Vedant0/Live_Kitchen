@@ -203,3 +203,92 @@ menu-item-description{
 .menu-item-description{
     font-size: 15px;
 }
+
+🌓
+
+
+Dark Mode:
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+
+const options = {
+    bottom: '32px', // default: '32px'
+  right: '32px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.3s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+
+our Chef section html};
+
+  <div id="chef">
+    <section>
+      <h1>Meet Our Chef</h1>
+      <div class="row">
+        <div class="ourchef-col">
+          <div class="image-section">
+            <img src="./Img/Chef.jpg">
+          </div>
+          <div class="content">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Sapiente accusamus modi, laboriosam fuga ut asperiores repellat voluptatibus sit exercitationem eveniet odit libero praesentium hic quisquam laborum porro, deserunt cupiditate eius.
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+             Facilis porro provident esse unde explicabo, quas, odio nulla libero magni dolorum quam minus culpa. Error sunt vel dolore maiores et animi.
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+             Sapiente accusamus modi, laboriosam fuga ut asperiores repellat voluptatibus sit exercitationem eveniet odit libero praesentium hic quisquam laborum porro, deserunt cupiditate eius.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Facilis porro provident esse unde explicabo, quas, odio nulla libero magni dolorum quam minus culpa. Error sunt vel dolore maiores et animi.</p>
+          </div>
+        </div>  
+        
+      </div>
+      </div>
+    </section>
+  </div>
+
+
+Our Chef css section:
+
+
+#chef h1{
+    text-align: center;
+    padding-top: 0;
+    background: rgb(116, 116, 126) 
+    url(./Img/Text\ BG.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    padding-bottom: 50px;
+}.ourchef-col{
+    position: absolute;
+    padding: 0;
+    display: flex;
+}
+.ourchef-col .image-section{
+   width: 300%;
+}
+.ourchef-col .image-section img{
+    padding: 20px 20px 20px;
+    border-radius: 8%;
+}
+.ourchef-col .content{
+    padding-left: 35px;
+    text-align: justify;
+}
+.ourchef-col .content p{
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -168,6 +168,7 @@ img{
 .story-col p2{
     font-size: 20px;
     font-weight: 500;
+    text-align: justify;
 }
 
 /*End story*/
@@ -229,20 +230,96 @@ img{
 
 
 /* OUR CHEF SECTION*/
-#chef h1{
-    text-align: center;
-    padding-top: 0;
-    background: rgb(116, 116, 126) 
+.chef-col img{
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding: 20px 20px 20px;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+#ourchef h2{
+    background: blue 
     url(./Img/Text\ BG.jpg);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin-top: 20px;
     font-size: 50px;
-    padding-bottom: 50px;
+    text-align: center;
 }
-#chef content{
+.chef-col .content p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+.chef-col .img-section{
+    width: 65%;
+    height: auto;
+}
+
+/*End Chef Section*/
+
+/*Footer*/
+#footer .container{
+    max-width: 1170px;
+    margin: auto;
+}
+#footer .row{
     display: flex;
-}   
-#chef img{
-    max-width: 100%;
-} 
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    align-content: center;
+}
+.footer-col p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+.footer-col .socail-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .socail-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+#footer h4{
+    text-align: center;
+    color: seashell;
+    font-weight: 300;
+    font-size: 10px;
+}
